@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>动态登录页面效果</title>
+    <script src="./js/index.js" defer></script>
+    <link rel="stylesheet" href="./style/base.css">
+    <link rel="stylesheet" href="./style/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <nav>
+        <button class="toggle-login" id="log-btn">注册</button>
+    </nav>
+    <section>
+        <div class="wrapper">
+            <div class="form-wrapper sign-in" id="sign-in">
+                <a href="#" class="close">
+                    <i class="fa-solid fa-xmark"></i>
+                </a>
+                <form action="">
+                    <h2>登录</h2>
+                    <div class="input-group">
+                        <input id="username" type="text" required>
+                        <label>用户名</label>
+                    </div>
+                    <div class="input-group">
+                        <input id="password" type="password" required>
+                        <label>密码</label>
+
+                    </div>
+                    <div class="remember">
+                        <label> <input type="checkbox">记住密码</label>
+                    </div>
+                    <button type="submit" class="btn">登录</button>
+                    <div class="sign-link">
+                        <p>还没有账户?
+                            <a href="#" class="singUp-link" id="up-link">前往注册</a>
+                        </p>
+                    </div>
+                </form>
+            </div>
+            <div class="form-wrapper sign-up" id="sign-up">
+                <form action="">
+                    <h2>注册</h2>
+                    <div class="input-group">
+                        <input id="username" type="text" required>
+                        <label>用户名</label>
+                    </div>
+                    <div class="input-group">
+                        <input id="password" type="email" required>
+                        <label>邮箱</label>
+                    </div>
+                    <div class="input-group">
+                        <input id="password" type="password" required>
+                        <label>密码</label>
+                    </div>
+                    <div class="remember">
+                        <label> <input type="checkbox" required>我已阅读并同意协议</label>
+                    </div>
+                    <button type="submit" class="btn">点击注册</button>
+                    <div class="sign-link">
+                        <p>已经有账户了?
+                            <a href="#" class="singUp-link" id="in-link">前往登录</a>
+                        </p>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+
+    </section>
+
+</body>
+
+</html>
